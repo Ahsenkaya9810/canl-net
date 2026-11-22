@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#0d1117">
+  <title>Canlınet</title>
+  <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+  <!-- KUPON 1 — Logoya dokununca Salih araması anında düşer. Takım ve oranlar veri.js içinde, "KUPON 1" bölümünde -->
+  <script>window.KUPON_NO = 1; window.ARAMASIZ = true;</script>
+
+  <div class="telefon">
+    <div class="durum" id="durum"></div>
+
+    <header class="ust">
+      <div class="ust-satir">
+        <div class="logo" id="logo"></div>
+        <div class="hesap">
+          <div class="ad" id="kullanici"></div>
+          <div class="bakiye" id="bakiye"></div>
+        </div>
+      </div>
+      <nav class="sekmeler">
+        <span class="aktif">Spor</span>
+        <span class="canli">Canlı</span>
+        <span>Kuponlarım</span>
+        <span>Kampanyalar</span>
+      </nav>
+    </header>
+
+    <div class="cipler">
+      <span class="cip aktif">⚽ Futbol</span>
+      <span class="cip">🏀 Basketbol</span>
+      <span class="cip">🎾 Tenis</span>
+      <span class="cip">🏐 Voleybol</span>
+      <span class="cip">🏒 Buz Hokeyi</span>
+    </div>
+
+    <section class="arena"><div class="arena-copy"><span>CANLINET / SPOR</span><h2>Maç merkezi</h2><p>Futbol · Günün karşılaşmaları</p></div><div class="arena-mark" aria-hidden="true"></div></section><div class="gun" id="gun"></div>
+    <main id="liste"></main>
+  </div>
+
+  <section class="kupon" id="kupon">
+    <div class="kupon-tutamac"></div>
+    <div class="kupon-baslik" id="kuponBaslik">
+      <h3>Kuponum <span class="rozet" id="adet">0</span></h3>
+      <span class="ok">Kombine ▾</span>
+    </div>
+    <div class="secimler" id="secimler"></div>
+    <div class="ozet">
+      <div><small>Toplam Oran</small><strong id="toplamOran"></strong></div>
+      <div><small>Yatırılan</small><strong id="yatirilan"></strong></div>
+      <div class="kazanc"><small>Olası Kazanç</small><strong id="kazanc"></strong></div>
+    </div>
+    <button class="oyna" id="oyna">Kuponu Onayla</button>
+  </section>
+
+  <div class="onay" id="onay">
+    <div class="onay-kutu">
+      <div class="tik">✓</div>
+      <h4>Kuponunuz alındı!</h4>
+      <p>Kupon No: <span class="kod" id="onayKod"></span><br>Çekim kaydı oluşturuldu.</p>
+      <button id="kapat">Tamam</button>
+    </div>
+  </div>
+
+
+  <!-- SALİH'İN GELEN ARAMASI (logoya dokununca da düşer) -->
+  <div class="arama" id="arama">
+    <div class="satir">
+      <div class="avatar" id="arayanHarf"></div>
+      <div class="kim"><small id="arayanAlt"></small><b id="arayanAd"></b></div>
+    </div>
+    <div class="tuslar">
+      <button class="tus red" id="reddet"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>Reddet</button>
+      <button class="tus yesil" id="cevapla"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>Cevapla</button>
+    </div>
+  </div>
+
+  <script src="veri.js"></script>
+  <script src="uygulama.js"></script>
+</body>
+</html>

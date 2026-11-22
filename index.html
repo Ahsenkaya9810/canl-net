@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#0d1117">
+  <title>Canlınet</title>
+  <link rel="stylesheet" href="stil.css">
+  <style>
+    /* Giriş sayfası: çekimde hangi kuponun açılacağını seçmek için */
+    .giris { min-height: 100vh; display: flex; flex-direction: column; justify-content: center;
+      align-items: center; gap: 14px; padding: 24px; }
+    .giris .logo { font-size: 34px; margin-bottom: 24px; }
+    .giris a { display: block; width: 100%; max-width: 320px; padding: 18px; border-radius: 14px;
+      background: var(--kart); border: 1px solid var(--cizgi); color: var(--yazi);
+      text-decoration: none; font-size: 17px; font-weight: 700; text-align: center; }
+    .giris a:active { background: var(--vurgu); color: #04130b; }
+  </style>
+</head>
+<body>
+  <div class="telefon giris">
+    <div class="logo">Canlı<b>net</b><small>SPOR</small></div>
+    <!-- Buton yazılarını istediğiniz gibi değiştirebilirsiniz -->
+    <a href="kupon-1.html">Kupon 1 · Madde 2</a>
+    <a href="kupon-2.html">Kupon 2 · Madde 3</a>
+    <a href="kupon-3.html">Kupon 3 · Madde 4</a>
+    <div style="color:var(--soluk);font-size:13px;margin-top:12px">ARAMASIZ ÇEKİMLER</div>
+    <a href="kupon-1-aramasiz.html">Kupon 1 · Aramasız</a>
+    <a href="kupon-2-aramasiz.html">Kupon 2 · Aramasız</a>
+    <a href="kupon-3-aramasiz.html">Kupon 3 · Aramasız</a>
+  </div>
+</body>
+</html>

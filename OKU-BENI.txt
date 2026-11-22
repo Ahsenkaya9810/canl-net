@@ -1,0 +1,13 @@
+CANLINET — İnsan Faktörü çekim prototipi
+Tamamen yerel, kurgusal ekran; gerçek bahis, ödeme, hesap veya sunucu bağlantısı yoktur.
+index.html: üç sahne seçimi. kupon-1.html / kupon-2.html / kupon-3.html: doğrudan çekim ekranları.
+veri.js: takım, oran, kullanıcı, tutar, arama adı, arama süresi.
+stil.css: renkler, ekran boyutları ve tasarım. uygulama.js: yerel ekran etkileşimleri.
+Salih araması: varsayılan 6 saniye sonra. Logoya dokunarak anında tetiklenebilir. Reddet ile kapanır. Ses için tarayıcı önce bir dokunuş isteyebilir.
+Tarayıcıda açın; telefonda kullanmak için klasörün tamamını statik bir sunucuya yükleyin. İnternet üzerinden bahis hizmeti sunmaz.
+
+Aramasız çekimler: kupon-1-aramasiz.html, kupon-2-aramasiz.html, kupon-3-aramasiz.html. Bu ekranlarda otomatik ve logo ile arama tetikleme kapalıdır; zil ve titreşim de yoktur.
+
+TAKIM REVIZYONU (23.11.2026): Tum maclarda yalnizca yapim tarafindan onaylanan dokuz takim adi kullanilir.
+Uclu kupon sahneleri ve her sahnenin aramali/aramasiz secenegi korunur.
+Takimlar ve eslesmeler veri.js dosyasinda degistirilebilir. Her sahnede dort farkli mac vardir.
